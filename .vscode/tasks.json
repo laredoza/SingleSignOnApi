@@ -1,0 +1,45 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/src/IdentityServerAspNetIdentity/SingleSignOn.IdentityServerAspNetIdentity.csproj"
+            ],
+            "problemMatcher": "$tsc"
+        },
+        {
+            "label": "publish",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "publish",
+                "${workspaceFolder}/src/IdentityServerAspNetIdentity/SingleSignOn.IdentityServerAspNetIdentity.csproj"
+            ],
+            "problemMatcher": "$tsc"
+        },
+        {
+            "label": "adminBuild",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/src/AdminApi/SingleSignOn.AdminApi.csproj"
+            ],
+            "problemMatcher": "$tsc"
+        },
+        {
+            "label": "postgresMigrationBuild",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/src/Migrations/Postgres/SingleSignOn.Migrations.Postgres.csproj"
+            ],
+            "problemMatcher": "$tsc"
+        },
+    ]
+}
