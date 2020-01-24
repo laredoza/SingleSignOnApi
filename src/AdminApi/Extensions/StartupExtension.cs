@@ -131,7 +131,7 @@ namespace SingleSignOn.AdminApi.Extensions
             var databaseType = (DatabaseType)Enum.Parse(typeof(DatabaseType), configuration.GetValue<string>("DatabaseType"));
             switch (databaseType)
             {
-                case DatabaseType.Postgress:
+                case DatabaseType.Postgres:
                     options.UseNpgsql(configuration.GetConnectionString("DefaultConnection"));
                     break;
                 case DatabaseType.MsSql:

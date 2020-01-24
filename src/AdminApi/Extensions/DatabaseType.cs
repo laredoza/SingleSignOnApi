@@ -20,7 +20,7 @@ namespace SingleSignOn.AdminApi.Extensions
     /// </summary>
     public enum DatabaseType
     {
-        Postgress,
+        Postgres,
         MsSql,
         MySql
     }
