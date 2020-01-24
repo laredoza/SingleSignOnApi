@@ -38,8 +38,7 @@ Postgres is the default database selected.
 This has not been tested yet.
 
 - Update DatabaseType to "MsSql" in the appsettings.json file.
-- Update the defaultConnection to "Data Source=.;Initial Cata
-log=SingleSignOn;User ID=sa;Password=yourStrong(!)Password;" in appsettings.json
+- Update the defaultConnection to "Data Source=.;Initial Catalog=SingleSignOn;User ID=sa;Password=yourStrong(!)Password;" in appsettings.json
 - Run Microsoft Sql Server Migration & Seeding 
 
 ## Database Installation
