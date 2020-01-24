@@ -40,3 +40,19 @@ This has not been tested yet.
 - Update DatabaseType to "MsSql" in the appsettings.json file.
 - Update the defaultConnection to "Server=.\\SQLEXPRESS;Database=SingleSignOn;Trusted_Connection=True;MultipleActiveResultSets=true"
 - Run Microsoft Sql Server migration & seeding 
+
+## Database Installation
+
+### Postgres
+
+```
+docker stop pg-docker 
+docker rm pg-docker 
+docker run \
+	--name pg-docker \
+	-e POSTGRES_PASSWORD=password1 \
+	-d --restart unless-stopped \
+	-p 5432:5432 \
+	-v /home/docker/postgress/data:/var/lib/postgresql/data \
+	postgres
+```
