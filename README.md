@@ -29,15 +29,13 @@ This Api is used by [Single Sign-on UI](https://github.com/laredoza/SingleSignOn
 
 Postgres is the default database selected.
 
-- Update DatabaseType to "Postgres" in the appsettings.json file.
+- Update DatabaseType to "Postgres" in appsettings.json file.
 - Update the defaultConnection to "Host=localhost;Database=SingleSignOn;Username=postgres;Password=password1;" in  appsettings.json
 - Run Postgres Migration & Seeding 
 
 ### Microsoft Sql Server
 
-This has not been tested yet.
-
-- Update DatabaseType to "MsSql" in the appsettings.json file.
+- Update DatabaseType to "MsSql" in appsettings.json file.
 - Update the defaultConnection to "Data Source=.;Initial Catalog=SingleSignOn;User ID=sa;Password=yourStrong(!)Password;" in appsettings.json
 - Run Microsoft Sql Server Migration & Seeding 
 
