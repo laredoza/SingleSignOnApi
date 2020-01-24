@@ -41,5 +41,15 @@
             ],
             "problemMatcher": "$tsc"
         },
+        {
+            "label": "sqlServerMigrationBuild",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/src/Migrations/SqlServer/SingleSignOn.Migrations.Sqlserver.csproj"
+            ],
+            "problemMatcher": "$tsc"
+        },
     ]
 }

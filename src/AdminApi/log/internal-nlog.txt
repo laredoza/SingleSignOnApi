@@ -1839,3 +1839,72 @@
 2020-01-23 06:45:48.5808 Info Found 21 configuration items
 2020-01-23 06:45:48.5941 Info Closing old configuration.
 2020-01-23 06:45:48.6064 Info Found 21 configuration items
+2020-01-24 10:21:33.4701 Info Message Template Auto Format enabled
+2020-01-24 10:21:33.4992 Info Loading assembly: NLog.Web.AspNetCore
+2020-01-24 10:21:33.5929 Info Adding target FileTarget(Name=allfile)
+2020-01-24 10:21:33.6121 Info Found 21 configuration items
+2020-01-24 10:21:33.6252 Info Closing old configuration.
+2020-01-24 10:21:33.6441 Info Found 21 configuration items
+2020-01-24 10:21:33.7492 Info FileTarget(Name=allfile): Archive mutex not available: /home/laredo/Dev/Github/SingleSignOnServer/SingleSignOnApi/src/AdminApi/bin/Debug/netcoreapp2.2/./log/trading.log
+2020-01-24 10:21:33.7539 Info FileTarget(Name=allfile): Deleting old archive file: '/home/laredo/Dev/Github/SingleSignOnServer/SingleSignOnApi/src/AdminApi/bin/Debug/netcoreapp2.2/log/trading-20200117.log'.
+2020-01-24 10:21:33.7539 Info FileTarget(Name=allfile): Archiving /home/laredo/Dev/Github/SingleSignOnServer/SingleSignOnApi/src/AdminApi/bin/Debug/netcoreapp2.2/log/trading.log to /home/laredo/Dev/Github/SingleSignOnServer/SingleSignOnApi/src/AdminApi/bin/Debug/netcoreapp2.2/./log/trading-20200123.log
+2020-01-24 10:23:30.0752 Info Message Template Auto Format enabled
+2020-01-24 10:23:30.1112 Info Loading assembly: NLog.Web.AspNetCore
+2020-01-24 10:23:30.2204 Info Adding target FileTarget(Name=allfile)
+2020-01-24 10:23:30.2425 Info Found 21 configuration items
+2020-01-24 10:23:30.2547 Info Closing old configuration.
+2020-01-24 10:23:30.2667 Info Found 21 configuration items
+2020-01-24 10:24:59.0240 Info Message Template Auto Format enabled
+2020-01-24 10:24:59.0604 Info Loading assembly: NLog.Web.AspNetCore
+2020-01-24 10:24:59.1658 Info Adding target FileTarget(Name=allfile)
+2020-01-24 10:24:59.1873 Info Found 21 configuration items
+2020-01-24 10:24:59.1976 Info Closing old configuration.
+2020-01-24 10:24:59.2097 Info Found 21 configuration items
+2020-01-24 10:49:45.0645 Info Message Template Auto Format enabled
+2020-01-24 10:49:45.1087 Info Loading assembly: NLog.Web.AspNetCore
+2020-01-24 10:49:45.2114 Info Adding target FileTarget(Name=allfile)
+2020-01-24 10:49:45.2334 Info Found 21 configuration items
+2020-01-24 10:49:45.2449 Info Closing old configuration.
+2020-01-24 10:49:45.2584 Info Found 21 configuration items
+2020-01-24 10:56:18.1549 Info Message Template Auto Format enabled
+2020-01-24 10:56:18.1735 Info Loading assembly: NLog.Web.AspNetCore
+2020-01-24 10:56:18.2483 Info Adding target FileTarget(Name=allfile)
+2020-01-24 10:56:18.2633 Info Found 21 configuration items
+2020-01-24 10:56:18.2736 Info Closing old configuration.
+2020-01-24 10:56:18.2853 Info Found 21 configuration items
+2020-01-24 10:56:39.1335 Info Message Template Auto Format enabled
+2020-01-24 10:56:39.1519 Info Loading assembly: NLog.Web.AspNetCore
+2020-01-24 10:56:39.2302 Info Adding target FileTarget(Name=allfile)
+2020-01-24 10:56:39.2452 Info Found 21 configuration items
+2020-01-24 10:56:39.2558 Info Closing old configuration.
+2020-01-24 10:56:39.2677 Info Found 21 configuration items
+2020-01-24 13:24:01.6541 Info Message Template Auto Format enabled
+2020-01-24 13:24:01.6941 Info Loading assembly: NLog.Web.AspNetCore
+2020-01-24 13:24:01.8086 Info Adding target FileTarget(Name=allfile)
+2020-01-24 13:24:01.8247 Info Found 21 configuration items
+2020-01-24 13:24:01.8344 Info Closing old configuration.
+2020-01-24 13:24:01.8457 Info Found 21 configuration items
+2020-01-24 13:26:55.0733 Info Message Template Auto Format enabled
+2020-01-24 13:26:55.1123 Info Loading assembly: NLog.Web.AspNetCore
+2020-01-24 13:26:55.2513 Info Adding target FileTarget(Name=allfile)
+2020-01-24 13:26:55.2871 Info Found 21 configuration items
+2020-01-24 13:26:55.3081 Info Closing old configuration.
+2020-01-24 13:26:55.3244 Info Found 21 configuration items
+2020-01-24 14:08:29.8697 Info Message Template Auto Format enabled
+2020-01-24 14:08:29.9059 Info Loading assembly: NLog.Web.AspNetCore
+2020-01-24 14:08:30.0091 Info Adding target FileTarget(Name=allfile)
+2020-01-24 14:08:30.0254 Info Found 21 configuration items
+2020-01-24 14:08:30.0371 Info Closing old configuration.
+2020-01-24 14:08:30.0482 Info Found 21 configuration items
+2020-01-24 21:29:56.5213 Info Message Template Auto Format enabled
+2020-01-24 21:29:56.5408 Info Loading assembly: NLog.Web.AspNetCore
+2020-01-24 21:29:56.6250 Info Adding target FileTarget(Name=allfile)
+2020-01-24 21:29:56.6399 Info Found 21 configuration items
+2020-01-24 21:29:56.6500 Info Closing old configuration.
+2020-01-24 21:29:56.6624 Info Found 21 configuration items
+2020-01-24 21:33:12.4019 Info Message Template Auto Format enabled
+2020-01-24 21:33:12.4223 Info Loading assembly: NLog.Web.AspNetCore
+2020-01-24 21:33:12.5021 Info Adding target FileTarget(Name=allfile)
+2020-01-24 21:33:12.5199 Info Found 21 configuration items
+2020-01-24 21:33:12.5324 Info Closing old configuration.
+2020-01-24 21:33:12.5465 Info Found 21 configuration items
