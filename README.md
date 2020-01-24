@@ -21,7 +21,7 @@ This Api is used by [Single Sign-on UI](https://github.com/laredoza/SingleSignOn
 
 ### Database Migration & Seeding
 - Postgres ( Run the SingleSignOn.Migrations.Postgres project )
-- Microsoft Sql Server ( Run the SingleSignOn.Migrations.SqlServer project. Not tested yet )
+- Microsoft Sql Server ( Run the SingleSignOn.Migrations.SqlServer project. )
 
 ## Database Configuration
 
