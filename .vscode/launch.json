@@ -5,17 +5,6 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Postgres Migration",
-            "type": "coreclr",
-            "request": "launch",
-            "preLaunchTask": "postgresMigrationBuild",
-            "program": "${workspaceFolder}/src/Migrations/Postgres/bin/Debug/netcoreapp2.2/SingleSignOn.Migrations.Postgres.dll",
-            "args": [],
-            "cwd": "${workspaceFolder}/src/Migrations/Postgres",
-            "stopAtEntry": false,
-            "console": "internalConsole"
-        },
-        {
             "name": "AdminApi",
             "type": "coreclr",
             "request": "launch",
@@ -33,6 +22,28 @@
             "sourceFileMap": {
                 "/Views": "${workspaceFolder}/Views"
             }
+        },
+        {
+            "name": "Postgres Migration",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "postgresMigrationBuild",
+            "program": "${workspaceFolder}/src/Migrations/Postgres/bin/Debug/netcoreapp2.2/SingleSignOn.Migrations.Postgres.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/src/Migrations/Postgres",
+            "stopAtEntry": false,
+            "console": "internalConsole"
+        },
+        {
+            "name": "MSSql Migration",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "postgresMigrationBuild",
+            "program": "${workspaceFolder}/src/Migrations/SqlServer/bin/Debug/netcoreapp2.2/SingleSignOn.Migrations.SqlServer.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/src/Migrations/SqlServer",
+            "stopAtEntry": false,
+            "console": "internalConsole"
         },
         {
             "name": ".NET Core Attach",
