@@ -30,7 +30,7 @@ This Api is used by [Single Sign-on UI](https://github.com/laredoza/SingleSignOn
 Postgres is the default database selected.
 
 - Update DatabaseType to "Postgres" in the appsettings.json file.
-- Update the defaultConnection to "Host=localhost;Database=SingleSignOn;Username=postgres;Password=password1;" in the appsettings.json
+- Update the defaultConnection to "Host=localhost;Database=SingleSignOn;Username=postgres;Password=password1;" in  appsettings.json
 - Run Postgres Migration & Seeding 
 
 ### Microsoft Sql Server
@@ -38,7 +38,8 @@ Postgres is the default database selected.
 This has not been tested yet.
 
 - Update DatabaseType to "MsSql" in the appsettings.json file.
-- Update the defaultConnection to "Server=.\\SQLEXPRESS;Database=SingleSignOn;Trusted_Connection=True;MultipleActiveResultSets=true" in the appsettings.json
+- Update the defaultConnection to "Data Source=.;Initial Cata
+log=SingleSignOn;User ID=sa;Password=yourStrong(!)Password;" in appsettings.json
 - Run Microsoft Sql Server Migration & Seeding 
 
 ## Database Installation
@@ -55,4 +56,18 @@ docker run \
 	-p 5432:5432 \
 	-v /home/docker/postgress/data:/var/lib/postgresql/data \
 	postgres
+```
+
+### SqlExpress
+```
+docker stop sql-express 
+docker rm sql-express 
+docker run \
+	--name sql-express \
+	-e 'ACCEPT_EULA=Y' \
+	-e 'SA_PASSWORD=yourStrong(!)Password' \
+	-e 'MSSQL_PID=Express' \
+	-p 1433:1433 \
+	-d --restart unless-stopped \
+	mcr.microsoft.com/mssql/server:2017-latest-ubuntu
 ```

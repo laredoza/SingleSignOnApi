@@ -120,8 +120,6 @@ namespace SingleSignOn.AdminApi.Extensions
             });
         }
 
-
-
         #endregion
 
         #region Other Methods
@@ -141,6 +139,7 @@ namespace SingleSignOn.AdminApi.Extensions
                     throw new Exception("MySql Database not implemented");
                     break;
                 default:
+                    throw new Exception("Database not implemented");
                     break;
             }
         }
