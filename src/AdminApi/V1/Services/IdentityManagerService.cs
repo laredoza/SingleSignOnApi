@@ -23,6 +23,7 @@ namespace AdminApi.V1.Services
     using Microsoft.EntityFrameworkCore;
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
+    using SingleSignOn.AdminApi.Extensions;
     using SingleSignOn.Data.Context;
     using SingleSignOn.IdentityServerAspNetIdentity.Models;
 
@@ -67,8 +68,10 @@ namespace AdminApi.V1.Services
         {
             // Adding this to the startup dependency injection conflicts with identityserver authentication.
             var services = new ServiceCollection();
-            services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseNpgsql(config.GetConnectionString("DefaultConnection")));
+            // services.AddDbContext<ApplicationDbContext>(options =>
+            //     options.UseNpgsql(config.GetConnectionString("DefaultConnection")));
+
+            services.AddApplicationContext(config);
 
             services.AddIdentity<ApplicationUser, IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>()
