@@ -20,8 +20,8 @@ This Api is used by [Single Sign-on UI](https://github.com/laredoza/SingleSignOn
 - [SingleSignOnIdentityServer ( IdentityServer4 functionality )](https://github.com/laredoza/SingleSignOnIdentityServer)
 
 ### Database Migration & Seeding
-- Postgres ( Run the SingleSignOn.Migrations.Postgres project )
-- Microsoft Sql Server ( Run the SingleSignOn.Migrations.SqlServer project. )
+- Postgres ( Run the SingleSignOn.Migrations.Postgres project or execute the migration scripts)
+- Microsoft Sql Server ( Run the SingleSignOn.Migrations.SqlServer project or execute the migration scripts )
 
 ## Database Configuration
 
