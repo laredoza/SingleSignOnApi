@@ -1908,3 +1908,11 @@
 2020-01-24 21:33:12.5199 Info Found 21 configuration items
 2020-01-24 21:33:12.5324 Info Closing old configuration.
 2020-01-24 21:33:12.5465 Info Found 21 configuration items
+2020-01-25 14:38:02.6191 Info Message Template Auto Format enabled
+2020-01-25 14:38:02.6998 Info Loading assembly: NLog.Web.AspNetCore
+2020-01-25 14:38:02.7931 Info Adding target FileTarget(Name=allfile)
+2020-01-25 14:38:02.8090 Info Found 21 configuration items
+2020-01-25 14:38:02.8192 Info Closing old configuration.
+2020-01-25 14:38:02.8321 Info Found 21 configuration items
+2020-01-25 14:38:02.9097 Info FileTarget(Name=allfile): Archive mutex not available: /home/laredo/Dev/Github/SingleSignOnServer/SingleSignOnApi/src/AdminApi/bin/Debug/netcoreapp2.2/./log/admin.log
+2020-01-25 14:38:02.9167 Info FileTarget(Name=allfile): Archiving /home/laredo/Dev/Github/SingleSignOnServer/SingleSignOnApi/src/AdminApi/bin/Debug/netcoreapp2.2/log/admin.log to /home/laredo/Dev/Github/SingleSignOnServer/SingleSignOnApi/src/AdminApi/bin/Debug/netcoreapp2.2/./log/admin-20200124.log

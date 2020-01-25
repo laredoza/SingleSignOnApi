@@ -1,5 +1,5 @@
 // --------------------------------------------------------------------------------------------------------------------
-// <copyright file="DatabaseType" company="WeBuyCars">
+// <copyright file="DatabaseType" company="">
 //
 // </copyright>
 // <summary>
