@@ -1,0 +1,1 @@
+sudo docker build --rm -t single-sign-on-admin-api ../src/ -f ../src/Dockerfile.SingleSignOn.AdminApi

@@ -3,17 +3,17 @@ WORKDIR /app
 
 #Copy solution file as well as projects
 RUN mkdir -p Data
-COPY ./src/Data/SingleSignOn.Data.csproj ./Data
+COPY ./Data/SingleSignOn.Data.csproj ./Data
 
 RUN mkdir -p Infrastructure
-COPY ./src/Infrastructure/SingleSignOn.Infrastructure.csproj ./Infrastructure
+COPY ./Infrastructure/SingleSignOn.Infrastructure.csproj ./Infrastructure
 
 RUN mkdir -p AdminApi
-COPY ./src/AdminApi/SingleSignOn.AdminApi.csproj ./AdminApi
+COPY ./AdminApi/SingleSignOn.AdminApi.csproj ./AdminApi
 
 # RUN dotnet restore
 # copy and publish app and libraries
-COPY ./src ./
+COPY ./ ./
 RUN dotnet publish -c Release -o out ./AdminApi
 
 #Create running docker image

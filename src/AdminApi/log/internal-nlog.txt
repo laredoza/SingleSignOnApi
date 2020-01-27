@@ -1940,3 +1940,26 @@
 2020-01-25 15:56:52.8195 Info Found 21 configuration items
 2020-01-25 15:56:52.8357 Info Closing old configuration.
 2020-01-25 15:56:52.8536 Info Found 21 configuration items
+2020-01-27 15:05:34.7194 Info Message Template Auto Format enabled
+2020-01-27 15:05:34.7269 Info Loading assembly: NLog.Web.AspNetCore
+2020-01-27 15:05:34.7680 Info Adding target FileTarget(Name=allfile)
+2020-01-27 15:05:34.7795 Info Found 21 configuration items
+2020-01-27 15:05:34.7873 Info Closing old configuration.
+2020-01-27 15:05:34.7966 Info Found 21 configuration items
+2020-01-27 15:05:39.4913 Info Shutdown() called. Logger closing...
+2020-01-27 15:05:39.4913 Info Closing old configuration.
+2020-01-27 15:05:39.4946 Info Logger has been closed down.
+2020-01-27 15:05:39.4946 Info AppDomain Shutting down. Logger closing...
+2020-01-27 15:05:39.4946 Info Logger has been shut down.
+2020-01-27 15:08:43.8853 Info Message Template Auto Format enabled
+2020-01-27 15:08:43.8945 Info Loading assembly: NLog.Web.AspNetCore
+2020-01-27 15:08:43.9582 Info Adding target FileTarget(Name=allfile)
+2020-01-27 15:08:43.9705 Info Found 21 configuration items
+2020-01-27 15:08:43.9789 Info Closing old configuration.
+2020-01-27 15:08:43.9887 Info Found 21 configuration items
+2020-01-27 15:10:16.2694 Info Message Template Auto Format enabled
+2020-01-27 15:10:16.2785 Info Loading assembly: NLog.Web.AspNetCore
+2020-01-27 15:10:16.3337 Info Adding target FileTarget(Name=allfile)
+2020-01-27 15:10:16.3458 Info Found 21 configuration items
+2020-01-27 15:10:16.3541 Info Closing old configuration.
+2020-01-27 15:10:16.3655 Info Found 21 configuration items
