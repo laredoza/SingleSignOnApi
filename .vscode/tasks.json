@@ -47,7 +47,17 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/src/Migrations/SqlServer/SingleSignOn.Migrations.Sqlserver.csproj"
+                "${workspaceFolder}/src/Migrations/SqlServer/SingleSignOn.Migrations.SqlServer.csproj"
+            ],
+            "problemMatcher": "$tsc"
+        },
+        {
+            "label": "mySqlServerMigrationBuild",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/src/Migrations/MySql/SingleSignOn.Migrations.MySql.csproj"
             ],
             "problemMatcher": "$tsc"
         },

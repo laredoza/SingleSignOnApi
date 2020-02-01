@@ -5,8 +5,11 @@
         <Version>0.0.2</Version>
         <Authors>Laredo Tirnanic</Authors>
         <Company>Laredo Tirnanic</Company>
+        <Title>Single Sign On Data</Title>
+        <Description>Single Sign On Data</Description>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <ProjectUrl>https://github.com/laredoza/SingleSignOnApi</ProjectUrl>
+        <RepositoryUrl>https://github.com/laredoza/SingleSignOnApi</RepositoryUrl>
         <License>MIT</License>
   </PropertyGroup>
   <ItemGroup>
