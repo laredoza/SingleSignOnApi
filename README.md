@@ -39,6 +39,12 @@ Postgres is the default database selected.
 - Update the defaultConnection to "Data Source=.;Initial Catalog=SingleSignOn;User ID=sa;Password=yourStrong(!)Password;" in appsettings.json
 - Run Microsoft Sql Server Migration & Seeding 
 
+### MySql
+
+- Update DatabaseType to "MySql" in appsettings.
+- Update the defaultConnection to "Server=localhost;Database=SingleSignOn;User=root;Password=Password1" in appsettings.json
+- Run Microsoft Sql Server Migration & Seeding 
+
 ## Docker
 
 ### Postgres
