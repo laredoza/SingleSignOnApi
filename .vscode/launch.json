@@ -35,13 +35,24 @@
             "console": "internalConsole"
         },
         {
-            "name": "MSSql Migration",
+            "name": "SqlServer Migration",
             "type": "coreclr",
             "request": "launch",
-            "preLaunchTask": "postgresMigrationBuild",
+            "preLaunchTask": "sqlServerMigrationBuild",
             "program": "${workspaceFolder}/src/Migrations/SqlServer/bin/Debug/netcoreapp2.2/SingleSignOn.Migrations.SqlServer.dll",
             "args": [],
             "cwd": "${workspaceFolder}/src/Migrations/SqlServer",
+            "stopAtEntry": false,
+            "console": "internalConsole"
+        },
+        {
+            "name": "MySql Migration",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "mySqlServerMigrationBuild",
+            "program": "${workspaceFolder}/src/Migrations/MySql/bin/Debug/netcoreapp2.2/SingleSignOn.Migrations.MySql.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/src/Migrations/MySql",
             "stopAtEntry": false,
             "console": "internalConsole"
         },

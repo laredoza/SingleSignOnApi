@@ -103,3 +103,19 @@ docker run \
 	-d --restart unless-stopped \
 	mcr.microsoft.com/mssql/server:2017-latest-ubuntu
 ```
+
+### MySql
+
+```
+docker stop my-sql
+docker rm my-sql
+docker run \
+        --name my-sql \
+        -d --restart unless-stopped \
+        -e MYSQL_ROOT_PASSWORD=Password1 \
+        -p 3306:3306 \
+        -v /home/docker/my-sql/datadir:/var/lib/mysql \
+        -v /home/docker/my-sql/config:/etc/mysql/conf.d \
+        mysql:latest
+
+```
