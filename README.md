@@ -51,6 +51,8 @@ docker run \
 	-d --restart unless-stopped \
 	-p 5001:80 \
 	-e "ConnectionStrings__DefaultConnection"="Host=localhost;Database=SingleSignOn;Username=postgres;Password=password1;" \
+	-e "Url__Authority"="http://localhost:5000" \
+	-e "Url__CorsUrl"="http://localhost:4200" \
 	-e "DatabaseType"="Postgres" \
 	single-sign-on-admin-api:latest \
 	--restart unless-stopped
@@ -67,6 +69,8 @@ docker run \
 	-p 5001:80 \
 	-e "ConnectionStrings__DefaultConnection"="Data Source=.;Initial Catalog=SingleSignOn;User ID=sa;Password=yourStrong(!)Password;" \
 	-e "DatabaseType"="MsSql" \
+	-e "Url__Authority"="http://localhost:5000" \
+	-e "Url__CorsUrl"="http://localhost:4200" \
 	single-sign-on-admin-api:latest \
 	--restart unless-stopped
 ```
@@ -88,6 +92,7 @@ docker run \
 ```
 
 ### SqlExpress
+
 ```
 docker stop sql-express 
 docker rm sql-express 
