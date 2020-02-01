@@ -39,6 +39,38 @@ Postgres is the default database selected.
 - Update the defaultConnection to "Data Source=.;Initial Catalog=SingleSignOn;User ID=sa;Password=yourStrong(!)Password;" in appsettings.json
 - Run Microsoft Sql Server Migration & Seeding 
 
+## Docker
+
+### Postgres
+
+```
+docker stop single-sign-on-admin-api 
+docker rm single-sign-on-admin-api  
+docker run \
+	--name=single-sign-on-admin-api \
+	-d --restart unless-stopped \
+	-p 5001:80 \
+	-e "ConnectionStrings__DefaultConnection"="Host=localhost;Database=SingleSignOn;Username=postgres;Password=password1;" \
+	-e "DatabaseType"="Postgres" \
+	single-sign-on-admin-api:latest \
+	--restart unless-stopped
+```
+
+### SqlExpress
+
+```
+docker stop single-sign-on-admin-api 
+docker rm single-sign-on-admin-api  
+docker run \
+	--name=single-sign-on-admin-api \
+	-d --restart unless-stopped \
+	-p 5001:80 \
+	-e "ConnectionStrings__DefaultConnection"="Data Source=.;Initial Catalog=SingleSignOn;User ID=sa;Password=yourStrong(!)Password;" \
+	-e "DatabaseType"="MsSql" \
+	single-sign-on-admin-api:latest \
+	--restart unless-stopped
+```
+
 ## Database Installation
 
 ### Postgres
