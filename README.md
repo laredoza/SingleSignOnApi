@@ -54,7 +54,7 @@ docker run \
 	-e "Url__Authority"="http://localhost:5000" \
 	-e "Url__CorsUrl"="http://localhost:4200" \
 	-e "DatabaseType"="Postgres" \
-	single-sign-on-admin-api:latest
+	laredoza/single-sign-on-admin-api:latest
 ```
 
 ### SqlExpress
@@ -70,7 +70,7 @@ docker run \
 	-e "DatabaseType"="MsSql" \
 	-e "Url__Authority"="http://localhost:5000" \
 	-e "Url__CorsUrl"="http://localhost:4200" \
-	single-sign-on-admin-api:latest
+	laredoza/single-sign-on-admin-api:latest
 ```
 
 ## Database Installation
