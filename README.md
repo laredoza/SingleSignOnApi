@@ -22,6 +22,7 @@ This Api is used by [Single Sign-on UI](https://github.com/laredoza/SingleSignOn
 ### Database Migration & Seeding
 - Postgres ( Run the SingleSignOn.Migrations.Postgres project or execute the migration scripts)
 - Microsoft Sql Server ( Run the SingleSignOn.Migrations.SqlServer project or execute the migration scripts )
+- MySql ( Run the SingleSignOn.Migrations.MySql project or execute the migration scripts )
 
 ## Database Configuration
 
@@ -37,6 +38,12 @@ Postgres is the default database selected.
 
 - Update DatabaseType to "MsSql" in appsettings.
 - Update the defaultConnection to "Data Source=.;Initial Catalog=SingleSignOn;User ID=sa;Password=yourStrong(!)Password;" in appsettings.json
+- Run Microsoft Sql Server Migration & Seeding 
+
+### MySql
+
+- Update DatabaseType to "MySql" in appsettings.
+- Update the defaultConnection to "Server=localhost;Database=SingleSignOn;User=root;Password=Password1" in appsettings.json
 - Run Microsoft Sql Server Migration & Seeding 
 
 ## Docker
@@ -55,8 +62,7 @@ docker run \
 	-e "Url__Authority"="http://10.133.7.99:5000" \
 	-e "Url__CorsUrl"="http://10.133.7.99:4200" \
 	-e "DatabaseType"="Postgres" \
-	single-sign-on-admin-api:latest \
-	--restart unless-stopped
+	laredoza/single-sign-on-admin-api:latest
 ```
 
 ### SqlExpress
@@ -105,4 +111,20 @@ docker run \
 	-p 1433:1433 \
 	-d --restart unless-stopped \
 	mcr.microsoft.com/mssql/server:2017-latest-ubuntu
+```
+
+### MySql
+
+```
+docker stop my-sql
+docker rm my-sql
+docker run \
+        --name my-sql \
+        -d --restart unless-stopped \
+        -e MYSQL_ROOT_PASSWORD=Password1 \
+        -p 3306:3306 \
+        -v /home/docker/my-sql/datadir:/var/lib/mysql \
+        -v /home/docker/my-sql/config:/etc/mysql/conf.d \
+        mysql:latest
+
 ```

@@ -136,11 +136,10 @@ namespace SingleSignOn.AdminApi.Extensions
                     options.UseSqlServer(configuration.GetConnectionString("DefaultConnection"));
                     break;
                 case DatabaseType.MySql:
-                    throw new Exception("MySql Database not implemented");
+                    options.UseMySql(configuration.GetConnectionString("DefaultConnection"));
                     break;
                 default:
                     throw new Exception("Database not implemented");
-                    break;
             }
         }
 
