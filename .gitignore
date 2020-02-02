@@ -248,4 +248,4 @@ ModelManifest.xml
 # Nodejs
 package-lock.json 
 
-src/AdminApi/log
+/src/AdminApi/log
