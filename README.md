@@ -40,6 +40,7 @@ Postgres is the default database selected.
 - Run Microsoft Sql Server Migration & Seeding 
 
 ## Docker
+Replace the 10.133.7.99 address with the actual ip / domain.
 
 ### Postgres
 
@@ -50,9 +51,9 @@ docker run \
 	--name=single-sign-on-admin-api \
 	-d --restart unless-stopped \
 	-p 5001:80 \
-	-e "ConnectionStrings__DefaultConnection"="Host=localhost;Database=SingleSignOn;Username=postgres;Password=password1;" \
-	-e "Url__Authority"="http://localhost:5000" \
-	-e "Url__CorsUrl"="http://localhost:4200" \
+	-e "ConnectionStrings__DefaultConnection"="Host=10.133.7.99;Database=SingleSignOn;Username=postgres;Password=password1;" \
+	-e "Url__Authority"="http://10.133.7.99:5000" \
+	-e "Url__CorsUrl"="http://10.133.7.99:4200" \
 	-e "DatabaseType"="Postgres" \
 	single-sign-on-admin-api:latest \
 	--restart unless-stopped
@@ -67,10 +68,10 @@ docker run \
 	--name=single-sign-on-admin-api \
 	-d --restart unless-stopped \
 	-p 5001:80 \
-	-e "ConnectionStrings__DefaultConnection"="Data Source=.;Initial Catalog=SingleSignOn;User ID=sa;Password=yourStrong(!)Password;" \
+	-e "ConnectionStrings__DefaultConnection"="Data Source=10.133.7.99;Initial Catalog=SingleSignOn;User ID=sa;Password=yourStrong(!)Password;" \
 	-e "DatabaseType"="MsSql" \
-	-e "Url__Authority"="http://localhost:5000" \
-	-e "Url__CorsUrl"="http://localhost:4200" \
+	-e "Url__Authority"="http://10.133.7.99:5000" \
+	-e "Url__CorsUrl"="http://10.133.7.99:4200" \
 	single-sign-on-admin-api:latest \
 	--restart unless-stopped
 ```
