@@ -248,12 +248,4 @@ ModelManifest.xml
 # Nodejs
 package-lock.json 
 
-# .NetScaffolder
-OracleAdoSourceType.xml
-MySqlAdoSourceType.xml
-SqlServerAdoSourceType.xml
-Common.Logging.Core.dll
-Common.Logging.dll
-Configuration.dll
-Projects/Presentation/Forms/Model/Package
-/Generated/Dal/Repository/EF/Dotnet/Data
+src/AdminApi/log
