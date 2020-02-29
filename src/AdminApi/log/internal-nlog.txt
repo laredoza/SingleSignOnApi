@@ -1983,3 +1983,57 @@
 2020-02-02 18:54:53.9807 Info Found 21 configuration items
 2020-02-02 18:54:53.9945 Info Closing old configuration.
 2020-02-02 18:54:54.0066 Info Found 21 configuration items
+2020-02-02 18:57:06.5057 Info Message Template Auto Format enabled
+2020-02-02 18:57:06.5297 Info Loading assembly: NLog.Web.AspNetCore
+2020-02-02 18:57:06.6218 Info Adding target FileTarget(Name=allfile)
+2020-02-02 18:57:06.6396 Info Found 21 configuration items
+2020-02-02 18:57:06.6523 Info Closing old configuration.
+2020-02-02 18:57:06.6684 Info Found 21 configuration items
+2020-02-08 10:41:33.1728 Info Message Template Auto Format enabled
+2020-02-08 10:41:33.1985 Info Loading assembly: NLog.Web.AspNetCore
+2020-02-08 10:41:33.2528 Info Adding target FileTarget(Name=allfile)
+2020-02-08 10:41:33.2666 Info Found 21 configuration items
+2020-02-08 10:41:33.2762 Info Closing old configuration.
+2020-02-08 10:41:33.2874 Info Found 21 configuration items
+2020-02-08 10:41:33.3324 Info FileTarget(Name=allfile): Archive mutex not available: /home/laredo/Dev/Github/SingleSignOnServer/SingleSignOnApi/src/AdminApi/bin/Debug/netcoreapp2.2/./log/admin.log
+2020-02-08 10:41:33.3372 Info FileTarget(Name=allfile): Archiving /home/laredo/Dev/Github/SingleSignOnServer/SingleSignOnApi/src/AdminApi/bin/Debug/netcoreapp2.2/log/admin.log to /home/laredo/Dev/Github/SingleSignOnServer/SingleSignOnApi/src/AdminApi/bin/Debug/netcoreapp2.2/./log/admin-20200202.log
+2020-02-28 22:10:57.9153 Info Message Template Auto Format enabled
+2020-02-28 22:10:57.9563 Info Loading assembly: NLog.Web.AspNetCore
+2020-02-28 22:10:58.0896 Info Adding target FileTarget(Name=allfile)
+2020-02-28 22:10:58.1105 Info Found 21 configuration items
+2020-02-28 22:10:58.1216 Info Closing old configuration.
+2020-02-28 22:10:58.1344 Info Found 21 configuration items
+2020-02-28 22:10:58.2126 Info FileTarget(Name=allfile): Archive mutex not available: /home/laredo/Dev/Github/SingleSignOnServer/SingleSignOnApi/src/AdminApi/bin/Debug/netcoreapp2.2/./log/admin.log
+2020-02-28 22:10:58.2175 Info FileTarget(Name=allfile): Archiving /home/laredo/Dev/Github/SingleSignOnServer/SingleSignOnApi/src/AdminApi/bin/Debug/netcoreapp2.2/log/admin.log to /home/laredo/Dev/Github/SingleSignOnServer/SingleSignOnApi/src/AdminApi/bin/Debug/netcoreapp2.2/./log/admin-20200208.log
+2020-02-28 22:11:02.2095 Info Shutdown() called. Logger closing...
+2020-02-28 22:11:02.2095 Info Closing old configuration.
+2020-02-28 22:11:02.2141 Info Logger has been closed down.
+2020-02-28 22:11:02.2141 Info AppDomain Shutting down. Logger closing...
+2020-02-28 22:11:02.2187 Info Logger has been shut down.
+2020-02-28 22:12:35.0415 Info Message Template Auto Format enabled
+2020-02-28 22:12:35.0718 Info Loading assembly: NLog.Web.AspNetCore
+2020-02-28 22:12:35.1924 Info Adding target FileTarget(Name=allfile)
+2020-02-28 22:12:35.2161 Info Found 21 configuration items
+2020-02-28 22:12:35.2289 Info Closing old configuration.
+2020-02-28 22:12:35.2414 Info Found 21 configuration items
+2020-02-29 08:04:26.8050 Info Message Template Auto Format enabled
+2020-02-29 08:04:26.8242 Info Loading assembly: NLog.Web.AspNetCore
+2020-02-29 08:04:26.8914 Info Adding target FileTarget(Name=allfile)
+2020-02-29 08:04:26.9073 Info Found 21 configuration items
+2020-02-29 08:04:26.9223 Info Closing old configuration.
+2020-02-29 08:04:26.9365 Info Found 21 configuration items
+2020-02-29 08:04:27.0035 Info FileTarget(Name=allfile): Archive mutex not available: /home/laredo/Dev/Github/SingleSignOnServer/SingleSignOnApi/src/AdminApi/bin/Debug/netcoreapp2.2/./log/admin.log
+2020-02-29 08:04:27.0081 Info FileTarget(Name=allfile): Deleting old archive file: '/home/laredo/Dev/Github/SingleSignOnServer/SingleSignOnApi/src/AdminApi/bin/Debug/netcoreapp2.2/log/admin-20200124.log'.
+2020-02-29 08:04:27.0094 Info FileTarget(Name=allfile): Archiving /home/laredo/Dev/Github/SingleSignOnServer/SingleSignOnApi/src/AdminApi/bin/Debug/netcoreapp2.2/log/admin.log to /home/laredo/Dev/Github/SingleSignOnServer/SingleSignOnApi/src/AdminApi/bin/Debug/netcoreapp2.2/./log/admin-20200228.log
+2020-02-29 08:23:16.6699 Info Message Template Auto Format enabled
+2020-02-29 08:23:16.6886 Info Loading assembly: NLog.Web.AspNetCore
+2020-02-29 08:23:16.7701 Info Adding target FileTarget(Name=allfile)
+2020-02-29 08:23:16.7859 Info Found 21 configuration items
+2020-02-29 08:23:16.7968 Info Closing old configuration.
+2020-02-29 08:23:16.8093 Info Found 21 configuration items
+2020-02-29 08:32:12.6021 Info Message Template Auto Format enabled
+2020-02-29 08:32:12.6203 Info Loading assembly: NLog.Web.AspNetCore
+2020-02-29 08:32:12.6954 Info Adding target FileTarget(Name=allfile)
+2020-02-29 08:32:12.7100 Info Found 21 configuration items
+2020-02-29 08:32:12.7249 Info Closing old configuration.
+2020-02-29 08:32:12.7370 Info Found 21 configuration items

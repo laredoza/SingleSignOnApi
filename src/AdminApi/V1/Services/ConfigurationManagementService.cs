@@ -163,7 +163,7 @@ namespace AdminApi.V1.Services
 
             returnedResults.Data = results;
 
-            return returnedResults; 
+            return returnedResults;
         }
 
         public async Task<IdentityResource> ReturnIdentityResourceAsync(string name)
@@ -354,7 +354,19 @@ namespace AdminApi.V1.Services
 
         public async Task<int> AddApiResourceAsync(ApiResource resource)
         {
-            var result = await this._configContext.ApiResources.AddAsync(resource.ToEntity());
+            var enitity = resource.ToEntity();
+            enitity.Scopes.Add(new IdentityServer4.EntityFramework.Entities.ApiScope
+            {
+                Name = enitity.Name,
+                DisplayName = enitity.DisplayName,
+                Description = enitity.Description,
+                Required = false,
+                Emphasize = false,
+                ShowInDiscoveryDocument = false,
+                ApiResourceId = enitity.Id
+            });
+
+            var result = await this._configContext.ApiResources.AddAsync(enitity);
             await this._configContext.SaveChangesAsync();
             resource = result.Entity.ToModel();
 
@@ -364,13 +376,38 @@ namespace AdminApi.V1.Services
         public async Task UpdateApiResourceAsync(UpdateApiResourceDto resource)
         {
             DateTime now = DateTime.Now;
-            var currentIdentityResource = await this._configContext.ApiResources.Include(p => p.Properties).FirstOrDefaultAsync(a => a.Name == resource.OriginalName);
+            var currentIdentityResource = await this._configContext.ApiResources
+                                            .Include(p => p.Properties)
+                                            .Include(p => p.Scopes)
+                                            .FirstOrDefaultAsync(a => a.Name == resource.OriginalName);
 
             currentIdentityResource.Name = resource.Name;
             currentIdentityResource.Updated = now;
             currentIdentityResource.Description = resource.Description;
             currentIdentityResource.DisplayName = resource.DisplayName;
             currentIdentityResource.Enabled = resource.Enabled;
+
+            if (currentIdentityResource.Scopes.Count == 0)
+            {
+                currentIdentityResource.Scopes.Add(new IdentityServer4.EntityFramework.Entities.ApiScope
+                {
+                    Name = currentIdentityResource.Name,
+                    DisplayName = currentIdentityResource.DisplayName,
+                    Description = currentIdentityResource.Description,
+                    Required = false,
+                    Emphasize = false,
+                    ShowInDiscoveryDocument = false,
+                    ApiResource = currentIdentityResource,
+                    ApiResourceId = currentIdentityResource.Id
+                });
+            }
+            else
+            {
+                currentIdentityResource.Scopes[0].Name = resource.Name;
+                currentIdentityResource.Scopes[0].Description = resource.Description;
+                currentIdentityResource.Scopes[0].DisplayName = resource.DisplayName;
+            }
+
             if (resource.Properties != null)
             {
                 foreach (var property in resource.Properties)
