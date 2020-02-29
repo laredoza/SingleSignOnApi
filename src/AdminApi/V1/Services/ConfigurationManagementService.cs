@@ -362,7 +362,7 @@ namespace AdminApi.V1.Services
                 Description = enitity.Description,
                 Required = false,
                 Emphasize = false,
-                ShowInDiscoveryDocument = false,
+                ShowInDiscoveryDocument = true,
                 ApiResourceId = enitity.Id
             });
 
@@ -396,7 +396,7 @@ namespace AdminApi.V1.Services
                     Description = currentIdentityResource.Description,
                     Required = false,
                     Emphasize = false,
-                    ShowInDiscoveryDocument = false,
+                    ShowInDiscoveryDocument = true,
                     ApiResource = currentIdentityResource,
                     ApiResourceId = currentIdentityResource.Id
                 });
